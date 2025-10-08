@@ -33,7 +33,7 @@ export interface ChatMessage {
 }
 
 class GeminiService {
-  private model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  private model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-lite' });
 
   async generateWorkoutPlan(request: WorkoutRequest): Promise<string> {
     const prompt = `
